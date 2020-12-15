@@ -1,0 +1,1 @@
+x = ['Lisa', 'Jing', 'Erik']
