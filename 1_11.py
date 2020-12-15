@@ -1,2 +1,1 @@
-c = True
-print(c)
+print(3 > 5)
