@@ -1,1 +1,1 @@
-x = ['Lisa', 'Jing', 'Erik']
+x = {'Lisa', 'Jing', 'Erik'}
