@@ -3,7 +3,7 @@ import ssl
 from bs4 import BeautifulSoup
  
 # The URL we want to scrape (CHANGED!)
-url = 'http://www.cedriccourtois.be/fanpage4' 
+url = 'http://www.cedriccourtois.be/fanpage3' 
  
 #################################################
 #################################################
