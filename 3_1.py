@@ -2,8 +2,8 @@ from urllib.request import Request, urlopen
 import ssl
 from bs4 import BeautifulSoup
  
-# The URL we want to scrape
-url = 'http://www.cedriccourtois.be/fanpage' 
+# The URL we want to scrape (CHANGED!)
+url = 'http://www.cedriccourtois.be/fanpage4' 
  
 #################################################
 #################################################
