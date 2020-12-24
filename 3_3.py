@@ -25,10 +25,11 @@ uClient.close()
 ### Interpret the page source as html
 soup = BeautifulSoup(html, 'html.parser')
  
-### Run through interpreted html and find all <div> </div> tags that are labeled as class = blog (CHANGED from blogpost to blog!)
+### Run through interpreted html and find all <div> </div> tags that are labeled as class = blog 
+### (CHANGED from blogpost to blog!)
 for blogpost in soup.find_all('div',class_='blog'):
  
-  # Store each blogpost title => <h2> </h2> in the variable title and print it (CHANGED from h2 to h3!)
+  # Store each blogpost title (CHANGED from h2 to h3!)
   title = blogpost.find('h3').getText()
   print(title)
  
