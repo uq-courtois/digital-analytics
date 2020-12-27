@@ -16,6 +16,8 @@ params = (
 response = requests.get('https://api.spotify.com/v1/search', headers=headers, params=params) # request the response
 # The endpoint base url is supplemented by the arguments in the variables headers and params
 
-json_data = json.loads(response.text) # convert json response to text/dict
+# Convert json response to text/dict
+json_data = json.loads(response.text) 
 
-print(json.dumps(json_data['tracks']['items'][0]['album']['artists'][0]['name'], sort_keys=True, indent=3)) # A beautified print of the returndata
+# Isolating the right information
+print(json_data['tracks']['items'][0]['album']['artists'][0]['name'])
