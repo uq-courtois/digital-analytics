@@ -9,7 +9,7 @@ headers = {
 } # You will need to change the authorization key into an active one, this one will be expired - Get it - when you are logged in to Spotify - from https://developer.spotify.com/console/get-search-item/?q=tania%20bowra&type=artist&market=&limit=&offset= (scroll down and click get Token (DO NOT USE SAFARI AS YOUR BROWSER)
 
 params = (
-        ('q', 'Rihanna Rude Boy'),
+        ('q', 'Lose Yourself Eminem'),
         ('type', 'track'),
 	('limit', 1)
     )
