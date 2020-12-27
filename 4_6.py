@@ -20,11 +20,11 @@ response = requests.get('https://api.spotify.com/v1/search', headers=headers, pa
 json_data = json.loads(response.text) # convert json response to text/dict
 
 # Isolate track id for Rude Boy by Rihanna
-uri = json_data['tracks']['items'][0]['id']
+trackid = json_data['tracks']['items'][0]['id']
 
 # Setting parameters
 params = (
-    ('seed_tracks', uri),
+    ('seed_tracks', trackid),
 )
  
 response = requests.get('https://api.spotify.com/v1/recommendations', headers=headers, params=params) # Making request
