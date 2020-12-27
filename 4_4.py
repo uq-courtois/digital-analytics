@@ -11,7 +11,7 @@ headers = {
 params = (
         ('q', 'Rihanna Rude Boy'),
         ('type', 'track'),
-				('limit', 1)
+	('limit', 1)
     )
 
 response = requests.get('https://api.spotify.com/v1/search', headers=headers, params=params) # request the response
@@ -32,4 +32,4 @@ json_data = json.loads(response.text) # Converting response into Python data str
  
 # Printing the tracks by artists, one by one
 for track in json_data['tracks']:
-	print(track['album']['artists'][0]['name'],'by',track['name'],)
+	print(track['album']['artists'][0]['name'],'by',track['name'])
