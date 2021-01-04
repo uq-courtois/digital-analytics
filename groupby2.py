@@ -17,6 +17,7 @@ data = pd.DataFrame(data)
 print(data)
 
 # All grades per person are combined into a single string value
+# The use of an lambda function is explained in depth later in this module
 grouped = data.groupby('name')['grade'].apply(lambda x: ','.join(x))
 
 # The series (because just one variable) is transformed into a datagrame
