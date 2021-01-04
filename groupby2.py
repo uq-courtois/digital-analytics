@@ -23,7 +23,7 @@ grouped = data.groupby('name')['grade'].apply(lambda x: ','.join(x))
 grouped = grouped.to_frame()
 
 # We use a function to count the occurences of 'A' per entry
-# The use of an lambda function is explained in dept later in this module
+# The use of an lambda function is explained in depth later in this module
 grouped['Acount'] = grouped['grade'].apply(lambda x: x.count('A'))
 
 print(grouped)
