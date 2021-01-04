@@ -7,7 +7,7 @@ print(df1.info()) # 4 variables, 19342 rows
 print(df2.info()) # 6 variables, 19335 rows
 
 # Integrate based on title, year, duration combinations
-# Cases in df1 take priority, we want to enrich them with data fro df2
+# Cases in df1 take priority, we want to enrich them with data from df2
 # That is why we merge 'left', so based on df1
 df = pd.merge(df1, df2, how="left", on=['title', 'year', 'duration'])
 
