@@ -17,4 +17,4 @@ df['year'] = df['published'].str[-4:]
 df['year'] = df['year'].astype(int) 
 
 # Check the year variable
-print(df['year'])
+print(df['year'].head(20))
