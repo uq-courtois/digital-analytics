@@ -3,7 +3,7 @@ import pandas as pd
 # Read file
 df = pd.read_csv('youtube_vevo.csv',sep=';') 
  
-# Sum the views per artist
+# Calculate the median views per artist
 grouped = df.groupby(['artist'], as_index=False)[['views']].median()
  
 # Print artist and views variables
