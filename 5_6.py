@@ -3,7 +3,7 @@ import pandas as pd
 # Read file
 df = pd.read_csv('youtube_vevo_dp.csv',sep=';') 
 
-# Shape of df
+# Shape of df - before
 print(df.shape)
 
 # Counting duplicate rows
@@ -15,5 +15,5 @@ print(df[df.duplicated()])
 # Drop exact duplicates
 df = df.drop_duplicates() 
 
-# Shape of df
+# Shape of df - after
 print(df.shape)
