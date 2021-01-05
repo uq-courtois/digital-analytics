@@ -16,5 +16,5 @@ df['year'] = df['published'].str[-4:]
 # We need this if we want to treat it as a number later on
 df['year'] = df['year'].astype(int) 
 
-# Check the year variable
+# Check the year variable (20 first observations)
 print(df['year'].head(20))
