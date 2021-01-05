@@ -14,7 +14,7 @@ x = x.rename(columns={"mtv": "count"})
 ### YOU NEED TO DO THIS
 
 # Sorting large to small
-x = x.sort_values(by=['count'], ascending=False).head(25)
+z = x.sort_values(by=['count'], ascending=False).head(25)
 
 ### YOU NEED TO ADAPT
 
@@ -25,10 +25,10 @@ import numpy as np
 plt.rcdefaults()
 fig, ax = plt.subplots()
 
-y = tuple(x['genre'])
+y = tuple(z['genre'])
 y_pos = np.arange(len(y))
 
-ax.barh(y_pos, x['count'])
+ax.barh(y_pos, z['count'])
 ax.set_yticks(y_pos)
 ax.set_yticklabels(y)
 ax.invert_yaxis()
