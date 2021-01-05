@@ -14,13 +14,15 @@ df['year'] = df['year'].astype(int)
 
 ### Displaying time series
  
-# Calculate sum of views per year
-yv = df.groupby('year', as_index=False)['views'].sum()
+# Calculate mean of views per year
+yv = df.groupby('year', as_index=False)['views'].mean()
  
 # Plot these variables
 plt.plot(yv['year'],yv['views'],label="Views")
 # Adding in title
 plt.title('Views per year')
+
+print(yv)
 
 # Gets rid of scientific notation
 plt.ticklabel_format(style='plain')
