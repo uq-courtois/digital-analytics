@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv('youtube_vevo.csv',sep=';') 
 
 # All titles per artist are combined into a single string value
-grouped = df.groupby('artist' , as_index=False,)['title'].apply(lambda x: ','.join(x))
+grouped = df.groupby('artist', as_index=False)['title'].apply(lambda x: ','.join(x))
 
 # Count the instances of live per title, making sure we're looking in the .lower() version of the title
 grouped['live'] = grouped['title'].apply(lambda x: x.lower().count('live'))
