@@ -19,6 +19,6 @@ data = pd.DataFrame(data)
 print(data)
 
 # Appplication of grouping method
-grouped = data.groupby(['name']).sum()
+grouped = data.groupby(['name'], as_index=False)[['expenditure']].sum()
 
 print(grouped)
