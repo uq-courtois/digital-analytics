@@ -18,6 +18,6 @@ plt.xticks(rotation='vertical')
 plt.tight_layout()
 
 # Save figure as pdf
-plt.savefig('histo_duration.pdf')
+plt.savefig('histo.pdf')
  
 plt.clf() # Clear figure
