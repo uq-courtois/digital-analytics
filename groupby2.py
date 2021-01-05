@@ -18,10 +18,7 @@ print(data)
 
 # All grades per person are combined into a single string value
 # The use of an lambda function is explained in depth later in this module
-grouped = data.groupby('name')['grade'].apply(lambda x: ','.join(x))
-
-# The series (because just one variable) is transformed into a datagrame
-grouped = grouped.to_frame()
+grouped = data.groupby('name' , as_index=False,)['grade'].apply(lambda x: ','.join(x))
 
 # We use a function to count the occurences of 'A' per entry
 # The use of an lambda function is explained in depth later in this module
