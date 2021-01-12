@@ -3,68 +3,15 @@
       {
          "address_components" : [
             {
-               "long_name" : "5391",
-               "short_name" : "5391",
+               "long_name" : "280-284",
+               "short_name" : "280-284",
                "types" : [ "street_number" ]
             },
             {
-               "long_name" : "Warrego Highway",
-               "short_name" : "Warrego Hwy",
+               "long_name" : "Sir Fred Schonell Drive",
+               "short_name" : "Sir Fred Schonell Dr",
                "types" : [ "route" ]
             },
-            {
-               "long_name" : "Gatton",
-               "short_name" : "Gatton",
-               "types" : [ "locality", "political" ]
-            },
-            {
-               "long_name" : "Lockyer Valley Regional",
-               "short_name" : "Lockyer Valley",
-               "types" : [ "administrative_area_level_2", "political" ]
-            },
-            {
-               "long_name" : "Queensland",
-               "short_name" : "QLD",
-               "types" : [ "administrative_area_level_1", "political" ]
-            },
-            {
-               "long_name" : "Australia",
-               "short_name" : "AU",
-               "types" : [ "country", "political" ]
-            },
-            {
-               "long_name" : "4343",
-               "short_name" : "4343",
-               "types" : [ "postal_code" ]
-            }
-         ],
-         "formatted_address" : "5391 Warrego Hwy, Gatton QLD 4343, Australia",
-         "geometry" : {
-            "location" : {
-               "lat" : -27.5550935,
-               "lng" : 152.3368934
-            },
-            "location_type" : "ROOFTOP",
-            "viewport" : {
-               "northeast" : {
-                  "lat" : -27.55374451970849,
-                  "lng" : 152.3382423802915
-               },
-               "southwest" : {
-                  "lat" : -27.5564424802915,
-                  "lng" : 152.3355444197085
-               }
-            }
-         },
-         "place_id" : "ChIJxfcBW2qTlmsRFrr2o3ms0wQ",
-         "plus_code" : {
-            "compound_code" : "C8VP+XQ Gatton QLD, Australia",
-            "global_code" : "5R4JC8VP+XQ"
-         },
-         "types" : [ "establishment", "point_of_interest", "university" ]
-      },
-      {
-         "address_components" : [
             {
                "long_name" : "Saint Lucia",
                "short_name" : "St Lucia",
@@ -86,33 +33,33 @@
                "types" : [ "country", "political" ]
             },
             {
-               "long_name" : "4072",
-               "short_name" : "4072",
+               "long_name" : "4067",
+               "short_name" : "4067",
                "types" : [ "postal_code" ]
             }
          ],
-         "formatted_address" : "St Lucia QLD 4072, Australia",
+         "formatted_address" : "280-284 Sir Fred Schonell Dr, St Lucia QLD 4067, Australia",
          "geometry" : {
             "location" : {
-               "lat" : -27.4975028,
-               "lng" : 153.0136905
+               "lat" : -27.4936664,
+               "lng" : 153.0067066
             },
-            "location_type" : "GEOMETRIC_CENTER",
+            "location_type" : "ROOFTOP",
             "viewport" : {
                "northeast" : {
-                  "lat" : -27.4961538197085,
-                  "lng" : 153.0150394802915
+                  "lat" : -27.4923174197085,
+                  "lng" : 153.0080555802915
                },
                "southwest" : {
-                  "lat" : -27.4988517802915,
-                  "lng" : 153.0123415197085
+                  "lat" : -27.49501538029151,
+                  "lng" : 153.0053576197085
                }
             }
          },
-         "place_id" : "ChIJSXzrQYJQkWsR6e4QN22U6Zo",
+         "place_id" : "ChIJIV_bMzVRkWsR6pWOygFaVHs",
          "plus_code" : {
-            "compound_code" : "G227+XF Saint Lucia QLD, Australia",
-            "global_code" : "5R4MG227+XF"
+            "compound_code" : "G244+GM Saint Lucia QLD, Australia",
+            "global_code" : "5R4MG244+GM"
          },
          "types" : [ "establishment", "point_of_interest", "university" ]
       }
