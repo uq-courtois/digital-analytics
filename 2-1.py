@@ -1,7 +1,7 @@
 # Import pandas
 import pandas as pd
  
-data = pd.read_csv('http://112.213.36.202/static/files/2-1.csv',sep=',')
+data = pd.read_csv('http://digitalanalytics.id.au/static/files/2-1.csv',sep=',')
 # Reading data from csv (important - separator is a ,)
 data = data.T.to_dict().values() # Converting dataframe into list of dictionaries
  
