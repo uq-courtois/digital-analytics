@@ -2,7 +2,7 @@
 import pandas as pd
  
 # Reading data from csv
-data = pd.read_csv('http://112.213.36.202/static/files/2_6.csv',sep=';')
+data = pd.read_csv('http://digitalanalytics.id.au/static/files/2_6.csv',sep=';')
 # Converting dataframe into list of dictionaries
 data = data.T.to_dict().values() 
 
