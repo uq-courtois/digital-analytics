@@ -12,7 +12,7 @@ data = [
 # Loop through data
 for d in data:
 	# Per iteration print number of followers
-	print(d['Followers'])
+	print(d['User'],'has',d['Followers'],'followers')
 
 # Converting list of dictionaries into dataframe
 data = pd.DataFrame(data)
