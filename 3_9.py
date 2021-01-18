@@ -7,7 +7,7 @@ pagenumber = 0
 
 # Continue looping as long as pagenumber is snmaller or equal to 3
 while pagenumber <= 4:
-
+	
 	# The URL we want to scrape with a custom pagenumber (needs to be converted to str() to be able to concatenate it)
 	url = 'https://www.pm.gov.au/media?page='+str(pagenumber)
 	
@@ -30,8 +30,8 @@ while pagenumber <= 4:
 	
 	### Interpret the page source as html
 	soup = BeautifulSoup(html, 'html.parser')
-
+	
 	print('Requested page',url)
-
+	
 	# Updating pagenumber for next loop
 	pagenumber += 1
