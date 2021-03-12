@@ -17,7 +17,7 @@ context = ssl._create_unverified_context()
 # To fetch html and store in variable 'html'
 uClient= urlopen(req, context=context)
 html = uClient.read() # html is stored in variable html
-uClient.close()a
+uClient.close()
  
 #################################################
 #################################################
