@@ -15,8 +15,8 @@ for d in data:
 	d['followers'] = d['followers'].replace('K','000')
 	d['followers'] = d['followers'].replace('M','000000')
 	d['followers'] = d['followers'].replace('.','')
-	d['following'] = d['followers'].replace('K','000')
-	d['following'] = d['followers'].replace('M','000000')
+	d['following'] = d['following'].replace('K','000')
+	d['following'] = d['following'].replace('M','000000')
 	d['following'] = d['following'].replace('.','')
 
 	# Print updated version of the dictionary to check
