@@ -14,10 +14,10 @@ for d in data:
 	# Get rid of the . altogether
 	d['followers'] = d['followers'].replace('K','000')
 	d['followers'] = d['followers'].replace('M','000000')
-	d['followers'] = d['followers'].replace('.','')
+	d['followers'] = d['followers'].replace(',','')
 	d['following'] = d['following'].replace('K','000')
 	d['following'] = d['following'].replace('M','000000')
-	d['following'] = d['following'].replace('.','')
+	d['following'] = d['following'].replace(',','')
 
 	# Print updated version of the dictionary to check
 	print(d)
