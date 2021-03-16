@@ -11,7 +11,7 @@ for d in data:
 	# Replace non-string characters in values of followers and following key values with suitable numerical equivalents. 
 	# K = 1000, so replaced by 000
 	# M = 1000000, so replaced by 000000
-	# Get rid of the . altogether
+	# Get rid of the , altogether
 	d['followers'] = d['followers'].replace('K','000')
 	d['followers'] = d['followers'].replace('M','000000')
 	d['followers'] = d['followers'].replace(',','')
