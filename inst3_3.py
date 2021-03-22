@@ -57,5 +57,5 @@ for item in linkdiv.find_all('li'):
 	print(blogpost.find('p').getText())
 
 	print()
-  
-  pause.seconds(1)
+	
+	pause.seconds(1)
