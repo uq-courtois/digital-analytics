@@ -31,4 +31,4 @@ sublabels = soup.find_all('div',class_='content')[1]
 # Loop through all a-tags in sublabels
 for sublabel in sublabels.find_all('a'):
 	# Get href attribute from a-tag and combine with domain prefix
-	print('http://www.discogs.com/'+sublabel['href'])
+	print('http://www.discogs.com'+sublabel['href'])
