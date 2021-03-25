@@ -25,13 +25,7 @@ uClient.close()
 ### Interpret the page source as html
 soup = BeautifulSoup(html, 'html.parser')
 
-cagemovies = [] # Empty list to count Cage's movies
-
 for item in soup.find_all('div', class_ = "filmo-row"): # iterate through all the odd divs
 	title = item.find('a').getText().strip() # Get movie title from hyperlink, strip spaces
 	year = item.find('span', class_ = 'year_column').getText().strip() # Get year from span
 	print(title+' ('+str(year)+')')
-	cagemovies.append(title)
-
-print()
-print('Found',len(cagemovies),'Nicolas Cage productions')
