@@ -22,3 +22,4 @@ json_data = json.loads(response.text)
 
 # Isolating the right information
 print(json_data['tracks']['items'][0]['album']['artists'][0]['name'])
+print(json_data['tracks']['items'][0]['uri'])
