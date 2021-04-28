@@ -12,9 +12,9 @@ print(df2.info())
 df = pd.merge(df1, df2, how='left', on=['name']) 
 # combines vars from df1 and df2 based on shared values of variable name, df1 is the primary table
 
-print(df1.shape) # Shape of first df, 2000 rows, 3 variables
-print(df2.shape) # Shape of second df, 2000 rows, 4 variables
-print(df.shape) # Shape of integrated df, 2000 rows, 6 variables
+print(df1.shape) # Shape of first df, 1988 rows, 3 variables
+print(df2.shape) # Shape of second df, 1988 rows, 4 variables
+print(df.shape) # Shape of integrated df, 1988 rows, 6 variables
 
 # Check non-nulls: do we have actual values for variables from both datafiles?
 print(df.info())
