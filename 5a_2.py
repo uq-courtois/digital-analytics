@@ -15,8 +15,7 @@ for c in df.columns.values.tolist():
 # You just need to replace the column name in the ''
 print(df['recommended_artist'].unique())
 
-# Get overview of the first 5 and last 5 values of a variable:
-
+# Get overview of the first 5 and last 5 values of a variable
 print(df['recommended_artist'])
 
 # Get overview of the first 20 values of a variable:
