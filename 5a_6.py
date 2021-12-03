@@ -14,7 +14,7 @@ isolatemissing = pd.isnull(df['Song'])
 print('\n Rows with missing data:\n',df[isolatemissing])
 
 # Drop rows with at least one missing value
-df.dropna()
+df = df.dropna()
 
 # Print the dataframe contents
 print('\nDF after:\n',df)
