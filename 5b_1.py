@@ -1,11 +1,11 @@
 import pandas as pd
 import string
 from collections import Counter,OrderedDict
-import nltk # nltk is a module for text analysis
-from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
-nltk.download('punkt')
-stopwords.words('english')
+from nltk.tokenize import word_tokenize 
+set(stopwords.words('english'))
 
 # Read data
 df = pd.read_csv('https://digitalanalytics.id.au/static/files/headlines.csv',delimiter=',')
