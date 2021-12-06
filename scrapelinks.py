@@ -19,4 +19,5 @@ soup = scraper('https://digitalanalytics.id.au/static/materials/beyonce/index.ht
 # From here on new code is added to the scraping snippet
 
 for i in soup.find_all('a'):
-	print(i['href'])
+	url = i['href']
+	print(url)
