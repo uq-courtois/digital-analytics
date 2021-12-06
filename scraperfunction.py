@@ -1,9 +1,3 @@
-# Note: for every exercise on scraping, you can re-use this
-# block of code to make the request and get html.
-# The html is stored in the variable 'soup'. When you 
-# use this code, you might want to #hash out the line
-# with print(soup), not to clutter your console.
-
 from urllib.request import Request, urlopen
 import ssl
 from bs4 import BeautifulSoup
@@ -21,7 +15,6 @@ def scraper(url):
  
 	return BeautifulSoup(html, 'html.parser')
 
-# Add in the url you want to scrape
 soup = scraper('https://digitalanalytics.id.au/static/materials/beyonce/index.html')
 
-print(soup) # Prints the html in the console
+print(soup) # Hash out or delete when you verified the HTML is successfully requested
