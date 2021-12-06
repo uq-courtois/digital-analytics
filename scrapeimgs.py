@@ -18,13 +18,13 @@ soup = scraper('https://digitalanalytics.id.au/static/materials/beyonce/index.ht
 
 # From here on new code is added to the scraping snippet
 for i in soup.find_all('img'):
- 
-    # Get the image link, combine it with the url that we scrape from, and print it:
-    imgurl = 'https://digitalanalytics.id.au/static/materials/beyonce/'+i['src']
-    print(imgurl)
-		
-		filename = i['src'] # Prepare a filename
-		
-		imgfile = open(filename,'wb') # Create a new, empty picture file
-		imgfile.write(urlopen(imgurl).read()) # Write picture information into empty file
-		imgfile.close() # Close file
+
+	# Get the image link, combine it with the url that we scrape from, and print it:
+	imgurl = 'https://digitalanalytics.id.au/static/materials/beyonce/'+i['src']
+	print(imgurl)
+	
+	filename = i['src'] # Prepare a filename
+	
+	imgfile = open(filename,'wb') # Create a new, empty picture file
+	imgfile.write(urlopen(imgurl).read()) # Write picture information into empty file
+	imgfile.close() # Close file
