@@ -14,7 +14,7 @@ def scraper(url):
  
 	return BeautifulSoup(html, 'html.parser')
 
-soup = scraper('https://digitalanalytics.id.au/static/materials/beyonce/index.html')
+soup = scraper('https://digitalanalytics.id.au/static/materials/')
 
-# From here on new code is added to the scraping snippet
-print(soup.getText())
+alltext = soup.getText()
+print(alltext)
