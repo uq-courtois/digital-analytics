@@ -15,6 +15,6 @@ def scraper(url):
  
 	return BeautifulSoup(html, 'html.parser')
 
-soup = scraper('https://digitalanalytics.id.au/static/materials/beyonce/index.html')
+soup = scraper('https://digitalanalytics.id.au/static/materials/')
 
 print(soup) # Hash out or delete when you verified the HTML is successfully requested
