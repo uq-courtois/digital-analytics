@@ -17,4 +17,6 @@ def scraper(url):
 soup = scraper('https://digitalanalytics.id.au/static/materials/')
 
 for atag in soup.find_all('a'):
-	print(atag['href'])
+	link = atag['href']
+	linktext = atag.getText()
+	print(link,linktext)
