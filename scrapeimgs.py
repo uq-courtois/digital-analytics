@@ -14,17 +14,23 @@ def scraper(url):
  
 	return BeautifulSoup(html, 'html.parser')
 
-soup = scraper('https://digitalanalytics.id.au/static/materials/beyonce/index.html')
+soup = scraper('https://digitalanalytics.id.au/static/materials/')
 
-# From here on new code is added to the scraping snippet
+# Find and loop through all the img elements
 for i in soup.find_all('img'):
 
-	# Get the image link, combine it with the url that we scrape from, and print it:
-	imgurl = 'https://digitalanalytics.id.au/static/materials/beyonce/'+i['src']
+	# Get the filename from the img source attribute
+	filename = i['src']
+
+	# Construct img url by concatenating page url with filename
+	imgurl = 'https://digitalanalytics.id.au/static/materials'+filename
 	print(imgurl)
 	
-	filename = i['src'] # Prepare a filename
-	
-	imgfile = open(filename,'wb') # Create a new, empty picture file
-	imgfile.write(urlopen(imgurl).read()) # Write picture information into empty file
-	imgfile.close() # Close file
+	# Create a new, empty picture file in project
+	imgfile = open(filename,'wb') 
+
+	# Write picture information into empty file
+	imgfile.write(urlopen(imgurl).read())
+
+	# Close file 
+	imgfile.close() 
