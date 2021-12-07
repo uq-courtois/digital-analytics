@@ -19,7 +19,7 @@ soup = scraper('https://digitalanalytics.id.au/static/materials/justin/')
 # Step 1: Narrow down the HTML in soup to the minimum
 divofinterest = soup.find('div',class_='YAJzu _26IxR _2QLX-')
 
-# Step 2: Loop though divofinterest and look for all divs with class name _2wWGp-
-for d in divofinterest.find_all('div',class_='_2wWGp-'):
+# Step 2: Loop though divofinterest and look for all divs with class name _2wWGp
+for d in divofinterest.find_all('div',class_='_2wWGp'):
 	print(d)
 	print()
