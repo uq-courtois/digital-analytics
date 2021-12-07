@@ -14,10 +14,7 @@ def scraper(url):
  
 	return BeautifulSoup(html, 'html.parser')
 
-soup = scraper('https://digitalanalytics.id.au/static/materials/beyonce/index.html')
+soup = scraper('https://digitalanalytics.id.au/static/materials/')
 
-# From here on new code is added to the scraping snippet
-
-for i in soup.find_all('a'):
-	url = i['href']
-	print(url)
+for atag in soup.find_all('a'):
+	print(atag['href'])
