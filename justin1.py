@@ -16,6 +16,6 @@ def scraper(url):
 
 soup = scraper('https://digitalanalytics.id.au/static/materials/justin/')
 
-# Narrow down the HTML in soup to the minimum
+# Step 1: Narrow down the HTML in soup to the minimum
 divofinterest = soup.find('div',class_='YAJzu _26IxR _2QLX-')
 print(divofinterest)
