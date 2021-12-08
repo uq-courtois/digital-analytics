@@ -17,4 +17,4 @@ for d in data:
 # Converting list of dictionaries into dataframe
 data = pd.DataFrame(data)
 # Writing dataframe into CSV file
-data.to_csv('instagram.csv',sep=';',index=False) 
+data.to_csv('instagram.csv',sep=',',index=False) 
