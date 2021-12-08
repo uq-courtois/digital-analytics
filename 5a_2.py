@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read data
-df = pd.read_csv('https://digitalanalytics.id.au/static/files/artists-spotify.csv',delimiter=',')
+df = pd.read_csv('https://digitalanalytics.id.au/static/files/artists-spotify.csv',sep=',')
 
 # Get overall description of the dataframe
 print(df.info())
@@ -19,10 +19,10 @@ print(df['recommended_artist'].unique())
 print(df['recommended_artist'])
 
 # Get overview of the first 20 values of a variable:
-print(df['recommended_artist'].head(10))
+print(df['recommended_artist'].head(20))
 
 # Get overview of the last 20 values of a variable:
-print(df['recommended_artist'].tail(10))
+print(df['recommended_artist'].tail(20))
 
 # Get overview of more than one variable
 print(df[['recommended_artist','recommended_track']])
