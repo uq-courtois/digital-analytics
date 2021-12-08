@@ -9,6 +9,6 @@ response = urlopen(requesturl)
 
 # Convert JSON result
 data = json.load(response) 
-data = data['results'][0]
+data = data["results"][0]
 
 print(json.dumps(data, sort_keys=True, indent=3)) 
