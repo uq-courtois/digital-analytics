@@ -12,4 +12,4 @@ data = [
 # Converting list of dictionaries into dataframe
 data = pd.DataFrame(data)
 # Writing dataframe into CSV file
-data.to_csv('grades.csv',sep=';',index=False) 
+data.to_csv('grades.csv',sep=',',index=False) 
