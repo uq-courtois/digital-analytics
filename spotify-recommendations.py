@@ -8,6 +8,7 @@ headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization': 'Bearer ' + token,
+}
 
 # Add in the trackid, here we use the one for Taylor Swift's Shake it off
 trackid = "0cqRj7pUJDkTCEsJkx8snD"
