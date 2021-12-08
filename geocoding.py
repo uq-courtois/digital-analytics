@@ -22,11 +22,8 @@ print(compiledurl)
 # Send request + get response
 response = urlopen(compiledurl) 
 
-# Convert JSON result
+# Convert JSON result -> our data are in the variable data
 data = json.load(response) 
 
-# Print data variable without formatting:
-print (data) 
-
-# Print data variable with formatting
-# print(json.dumps(data, sort_keys=True, indent=3)) 
+# Print data variable with hierarchical formatting
+print(json.dumps(data, sort_keys=True, indent=3)) 
