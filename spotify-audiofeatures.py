@@ -14,6 +14,7 @@ headers = {
 # Add in the trackid, here we use the one for Taylor Swift's Shake it off
 trackid = "0cqRj7pUJDkTCEsJkx8snD"
 
+# Make request
 response = requests.get('https://api.spotify.com/v1/audio-features/'+trackid, headers=headers)
 
 # We want code [200] here, points to a successful request
@@ -22,4 +23,5 @@ print(response)
 # Convert response to text/dict
 data = json.loads(response.text) 
 
+# Print raw result
 print(json.dumps(data, sort_keys=True, indent=3)) 
