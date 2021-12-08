@@ -3,7 +3,6 @@ import json
 import requests
 
 # You will need to change the authorization key into an active one, this one will be expired - Get it - when you are logged in to Spotify - from https://developer.spotify.com/console/get-search-item/ (scroll down and click get Token (DO NOT USE SAFARI AS YOUR BROWSER)
-
 token = 'BQBSWJohULY451Oj_Ej81Fu8GBZRoubiPZyIklSzrqL5tpgDA3kxiRX5jZFRKWmWyDgOg0R8C-jL83ELEOzSnX9GOEErb9Q1JMVKk3K_n4ZErEl-_bWD3Y4d2UDVcOLc2BpSD7IqGMHYB4sbvEIg-O8XQNpRn49992KGIHeXQKtJjEM_S7EreiX6byi-ICUj1QfNvr1oZ88UEYKsSlq5Ko5VH2T0uZfWrcJhXi3DNZpqyAT5raMnssQvRdz6RLrXA3iZDLpnijDhx80TtEW51Jc'
 
 headers = {
@@ -33,5 +32,5 @@ print(albumtitle)
 release = data['tracks']['items'][0]['album']['release_date']
 print(release)
 
-trackid = data['tracks']['items'][0]['album']['id']
+trackid = data['tracks']['items'][0]['id']
 print(trackid)
