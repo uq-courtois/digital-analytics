@@ -7,7 +7,7 @@ from nltk.tokenize import word_tokenize
 set(stopwords.words('english'))
 
 # Read data
-df = pd.read_csv('https://digitalanalytics.id.au/static/files/headlines.csv',delimiter=',')
+df = pd.read_csv('https://digitalanalytics.id.au/static/files/headlines.csv',sep=',')
 
 # Combine all values of 'headline' into a single string variable 'text'
 text = ' '.join(df['headline'].tolist()).lower()
