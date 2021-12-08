@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read data
-df = pd.read_csv('https://digitalanalytics.id.au/static/files/duplicates.csv',delimiter=',')
+df = pd.read_csv('https://digitalanalytics.id.au/static/files/duplicates.csv',sep=',')
 
 # Print the dataframe contents
 print('\nDF before:\n',df)
