@@ -1,3 +1,4 @@
+
 import json
 import requests
 
@@ -28,3 +29,7 @@ data = json.loads(response.text)
 # Isolating the genre information and printing it - which is a list
 genres = data['artists']['items'][0]['genres']
 print(genres)
+
+# The artist id
+artistid = data['artists']['items'][0]['id']
+print(artistid)
