@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read data
-df = pd.read_csv('https://digitalanalytics.id.au/static/files/artists-spotify.csv',delimiter=',')
+df = pd.read_csv('https://digitalanalytics.id.au/static/files/artists-spotify.csv',sep=',')
 
 # Subsetting rows with values for popularity higher than 80
 df_pop = df[df['popularity'] > 80]
