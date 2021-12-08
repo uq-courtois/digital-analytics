@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read data
-df = pd.read_csv('https://digitalanalytics.id.au/static/files/missing.csv',delimiter=',')
+df = pd.read_csv('https://digitalanalytics.id.au/static/files/missing.csv',sep=',')
 
 # Print the dataframe contents
 print('\nDF before:\n',df)
