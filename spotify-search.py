@@ -10,13 +10,15 @@ headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer ' + token,
 } 
- 
+
+# Set parameters
 params = (
         ('q', 'Taylor Swift'),
         ('type', 'artist'),
 	('limit', '1'),
     )
- 
+
+# Make request
 response = requests.get('https://api.spotify.com/v1/search', headers=headers, params=params) # 
 
 # We want code [200] here, points to a successful request
