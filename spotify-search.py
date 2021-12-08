@@ -14,7 +14,7 @@ headers = {
 params = (
         ('q', 'Taylor Swift'),
         ('type', 'artist'),
-				('limit', '1'),
+	('limit', '1'),
     )
  
 response = requests.get('https://api.spotify.com/v1/search', headers=headers, params=params) # 
