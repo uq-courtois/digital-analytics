@@ -2,7 +2,7 @@
 import pandas as pd
  
 # Reading data from csv
-data = pd.read_csv('http://digitalanalytics.id.au/static/files/2_5.csv',sep=';')
+data = pd.read_csv('http://digitalanalytics.id.au/static/files/2_5.csv',sep=',')
 # Converting dataframe into list of dictionaries
 data = data.T.to_dict().values() 
  
@@ -13,6 +13,7 @@ rankdata = []
 for i in data:
 	# Conditional to only process rows with a rank smaller than or equal to three
 	if i['Rank'] <= 3:
+		# optional print statement to check your data in the console
 		print(i)
 		# Append the entire dictionary in the iteration to the list rankdata
 		rankdata.append(i)
@@ -20,4 +21,4 @@ for i in data:
 # Converting temporary list of dictionaries into dataframe
 newdata = pd.DataFrame(rankdata) 
 # Writing dataframe into CSV file
-newdata.to_csv('ranks.csv',sep=';',index=False) 
+newdata.to_csv('ranks.csv',sep=',',index=False) 
