@@ -17,7 +17,7 @@ def scraper(url):
 soup = scraper('https://digitalanalytics.id.au/static/materials/')
 
 # Find and loop through all the img elements
-for i in soup.find_all('img'):
+for i in soup.find_all('img',class_='decoration'):
 
 	# Get the img url from the img source attribute
 	imgurl = i['src']
