@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read data
-df = pd.read_csv('https://digitalanalytics.id.au/static/files/headlines.csv',delimiter=',')
+df = pd.read_csv('https://digitalanalytics.id.au/static/files/headlines.csv',sep=',')
 
 # DF before
 print('\nBefore',df)
