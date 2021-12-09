@@ -16,5 +16,8 @@ def scraper(url):
  
 soup = scraper('https://digitalanalytics.id.au/static/materials/mockup')
 
+# Find all <a> elements on page and loop through them
 for a in soup.find_all('a'):
+	
+	# Extract ['href'] attribute from <a> element and print it
 	print(a['href'])
