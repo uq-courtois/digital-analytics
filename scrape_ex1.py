@@ -16,5 +16,6 @@ def scraper(url):
  
 soup = scraper('https://digitalanalytics.id.au/static/materials/mockup')
 
+# Find the one <h1> element and extract the text from it, store in variable title and print it
 title = soup.find('h1').getText()
 print(title)
