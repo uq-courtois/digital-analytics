@@ -14,7 +14,8 @@ def scraper(url):
  
 	return BeautifulSoup(html, 'html.parser')
  
-soup = scraper('https://en.wikipedia.org/wiki/Vin_Diesel')
+# Add in appropriate url
+soup = scraper('https://www.digitalanalytics.id.au/static/materials/wikipedia/')
 
 # Isolate div with class name and extract text
 text = soup.find('div',class_='mw-parser-output').getText()
