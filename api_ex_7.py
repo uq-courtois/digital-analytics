@@ -3,12 +3,12 @@ import requests
 import pandas as pd
 
 # Reading data from csv
-data = pd.read_csv('https//:www.digitalanalytics.id.au/static/files/4_1.csv',sep=';') 
+data = pd.read_csv('https://www.digitalanalytics.id.au/static/files/4_1.csv',sep=',') 
 # Converting dataframe into list of dictionaries
 data = data.T.to_dict().values() 
 
 # Use your own token - this one has expired
-token = 'BQB_L23a4yd4rH_6Wb2rDNccymwTM5YG-Inn3CJfWGOAlabNx3_VzFyGVO-oM6RgAG3VXa9mfdCWCe7aOkcIQ4ns9TMPKV0Sq0dp4SxKeJS4I3UrJXvctCjY4mnGoC2_Fb9lenQdBUvSQK5sKfjyZHakZ_yBAXXvdN3s7Rv5ozGDfZjGMpyZMUAFR8Mf8siuyD2i1F1vKTcwrRT9s3mud0e4bpH1gnOhzadc7CZoaRBUZbcEFnymNwgjLr8FrqYm8DqSjFMNV6POtiCNbvL8djg'
+token = 'BQBX7lQdcVMv2GvwAjB-dSoU_eW72V5m7vop32fSN2eCcXKhTbilosrYb3kWR_aI4_6I1rwJeu-8hz3zdmPw6Xuud9FZVAN6OsSoXBemGYkmIJIimceEzaZyEcQkYuD7TkUtIl0v7LlsHiSdTO_rVIwxp0ogzWqmbSgpG2JJB48_0ImK2Zyneo62zaDLzUld-3lYzMjy493HIbYSZYps4J-yMTL-hIH_CLY2AtaoZqAglQlWBDJDk5j4DVJIdjSEKUE2WbvURkp1Ip892B-bN2c'
  
 # Iterate through the imported data
 for item in data:
@@ -37,3 +37,4 @@ for item in data:
 	genres = json_data['artists']['items'][0]['genres'] # Isolating the genre information - as a list
 
 	print(item['Artist'],genres)
+	print()
