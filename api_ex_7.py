@@ -27,14 +27,16 @@ for item in data:
 	('type', 'artist'),
 	)
  
+	# Make request
 	response = requests.get('https://api.spotify.com/v1/search',headers=headers, params=params) # request the response
-	# The endpoint base url is supplemented by the arguments in the variables headers and params
- 
-	print(response) # OK when 200
- 
-	json_data = json.loads(response.text) # Convert json response to text/dict
- 
-	genres = json_data['artists']['items'][0]['genres'] # Isolating the genre information - as a list
+	
+	#print(response) # OK when 200
+
+	# Convert json response to text/dict
+	json_data = json.loads(response.text) 
+
+	# Isolating the genre information - as a list
+	genres = json_data['artists']['items'][0]['genres'] 
 
 	print(item['Artist'],genres)
 	print()
