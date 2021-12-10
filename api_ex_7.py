@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 # Reading data from csv
-data = pd.read_csv('http://112.213.36.202/static/files/4_1.csv',sep=';') 
+data = pd.read_csv('https//:www.digitalanalytics.id.au/static/files/4_1.csv',sep=';') 
 # Converting dataframe into list of dictionaries
 data = data.T.to_dict().values() 
 
@@ -32,7 +32,7 @@ for item in data:
  
 	print(response) # OK when 200
  
-	json_data = json.loads(response.text) # convert json response to text/dict
+	json_data = json.loads(response.text) # Convert json response to text/dict
  
 	genres = json_data['artists']['items'][0]['genres'] # Isolating the genre information - as a list
 
