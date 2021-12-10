@@ -21,9 +21,9 @@ for item in data:
 	} 
  
 	params = (
-					('q', item['Artist']), # Per iteration, the value of q = the read artist
-					('type', 'artist'),
-			)
+		('q', item['Artist']), # Per iteration, the value of q = the read artist
+		('type', 'artist'),
+		)
  
 	response = requests.get('https://api.spotify.com/v1/search',headers=headers, params=params) # request the response
 	# The endpoint base url is supplemented by the arguments in the variables headers and params
