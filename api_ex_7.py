@@ -15,17 +15,17 @@ for item in data:
 	print('Searching for',item['Artist'])
  
 	headers = {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json',
-    'Authorization': 'Bearer ' + token,
+    	'Accept': 'application/json',
+    	'Content-Type': 'application/json',
+    	'Authorization': 'Bearer ' + token,
 	} 
  
 	params = (
-		# Per iteration, the value of q is the value of Artist in the iterator variable 
-		# (one row in the dat file)
-		('q', item['Artist']), 
-		('type', 'artist'),
-		)
+	# Per iteration, the value of q is the value of Artist in the iterator variable 
+	# (one row in the dat file)
+	('q', item['Artist']), 
+	('type', 'artist'),
+	)
  
 	response = requests.get('https://api.spotify.com/v1/search',headers=headers, params=params) # request the response
 	# The endpoint base url is supplemented by the arguments in the variables headers and params
