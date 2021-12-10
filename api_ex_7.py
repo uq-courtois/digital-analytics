@@ -21,7 +21,9 @@ for item in data:
 	} 
  
 	params = (
-		('q', item['Artist']), # Per iteration, the value of q = the read artist
+		# Per iteration, the value of q is the value of Artist in the iterator variable 
+		# (one row in the dat file)
+		('q', item['Artist']), 
 		('type', 'artist'),
 		)
  
