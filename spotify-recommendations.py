@@ -16,6 +16,7 @@ trackid = "0cqRj7pUJDkTCEsJkx8snD"
 # Setting parameters
 params = (
     ('seed_tracks', trackid),
+    ('limit', '10'), # Get the first 10, you can adjust this
 )
 
 # Making request
