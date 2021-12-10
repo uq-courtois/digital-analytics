@@ -10,9 +10,9 @@ headers = {
     'Authorization': 'Bearer ' + token,
 } 
  
-# Set parameters
+# Set parameters - change q to Rihanna
 params = (
-        ('q', 'Taylor Swift'),
+        ('q', 'Rihanna'),
         ('type', 'artist'),
 	('limit', '1'),
     )
