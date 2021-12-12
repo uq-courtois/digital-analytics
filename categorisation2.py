@@ -13,4 +13,4 @@ def lyric_video(title):
 
 df['lyric_video'] = df['title'].apply(lambda x: lyric_video(x))
 
-print(df['view_cat'])
+print(df['lyric_video'])
