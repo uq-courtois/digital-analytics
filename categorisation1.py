@@ -5,7 +5,7 @@ df = pd.read_csv('https://digitalanalytics.id.au/static/files/youtube_vevo.csv',
 
 # Function to categorise: receives views, returns view_cat 
 def categorisation(views):
-	if views > 1000000:
+	if views >= 1000000:
 		view_cat = 1
 	else:
 		view_cat = 0
