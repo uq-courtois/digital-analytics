@@ -14,7 +14,7 @@ def viewcat(views):
 # Function to categorise: receives title, returns lyric_video
 def lyric_video(title):
 	if 'lyric video' in title.lower():
-		print(title)
+		lyric_video = 'yes'
 	else:
 		lyric_video = 'no'
 	return lyric_video
