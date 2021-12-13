@@ -1,8 +1,8 @@
 import pandas as pd
 import string
-from collections import Counter,OrderedDict
 import nltk
-from nltk.corpus import stopwords
+nltk.download('punkt')
+from nltk.tokenize import word_tokenize
 
 # Get stopwords
 sw = pd.read_csv('https://www.digitalanalytics.id.au/static/files/stopwords.csv',sep=',')
