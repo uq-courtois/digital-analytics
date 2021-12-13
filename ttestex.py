@@ -14,7 +14,7 @@ group2 = df[df['artist']=='TaylorSwiftVEVO']['views']
 means = (group1.mean(),group2.mean()) # Calculating means
 std = (group1.std(),group2.std()) # Calculating standard deviations
 positions = [0, 1] #Defining positions in the graph
-plt.bar(positions, means, yerr=std) # Compiling the plot
+plt.bar(positions, means) # Compiling the plot - Dropped the standard deviations to avoid the negative values
 plt.xticks(positions,['ArianaGrandeVevo', 'TaylorSwiftVEVO'],rotation="horizontal") # Adding labels
 plt.gcf().axes[0].yaxis.get_major_formatter().set_scientific(False) # Prevent scientific notation
 plt.tight_layout() # Forces tidy plot lay-out
