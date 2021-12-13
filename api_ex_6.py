@@ -32,7 +32,8 @@ print(trackid)
 print() # Prints a blank line
 
 # Now use that trackid to get recommendations from Spotify
-#The token, headers, and imports can all stay the same as above
+# The token, headers, and imports can all stay the same as above
+# (You can paste them in again, it won't affect the output)
 
 # Set new parameters, for recommendations endpoint
 params = (
