@@ -3,10 +3,11 @@ import string
 import nltk
 nltk.download('punkt')
 from nltk.tokenize import word_tokenize
+from collections import Counter
 
 # Get stopwords
 sw = pd.read_csv('https://www.digitalanalytics.id.au/static/files/stopwords.csv',sep=',')
-stopwords = sw['stopwords'].tolist(
+stopwords = sw['stopwords'].tolist()
 
 # Read data
 df = pd.read_csv('https://digitalanalytics.id.au/static/files/headlines.csv',sep=',')
