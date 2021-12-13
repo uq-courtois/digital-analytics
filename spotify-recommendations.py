@@ -28,5 +28,10 @@ print(response)
 # Convert response to text/dict
 data = json.loads(response.text) 
 
-# Print result
-print(json.dumps(data, sort_keys=True, indent=3)) 
+# Loop through the tracks and print the artist and track name for each recommendation
+for rec_track in data['tracks']:
+ artist_name = track['album']['artists'][0]['name']
+ track_name = track['name']
+ print(artist_name + ': ' + track_name)
+
+
