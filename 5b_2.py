@@ -1,10 +1,11 @@
 import pandas as pd
 import string
 import nltk
-nltk.download('stopwords')
-from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize 
-set(stopwords.words('english'))
+
+# Get stopwords
+sw = pd.read_csv('https://www.digitalanalytics.id.au/static/files/stopwords.csv',sep=',')
+stopwords = sw['stopwords'].tolist()
 
 # Read data
 df = pd.read_csv('https://digitalanalytics.id.au/static/files/headlines.csv',sep=',')
@@ -19,7 +20,7 @@ text = text.translate(str.maketrans('', '', string.punctuation))
 text_tokens = word_tokenize(text)
 
 # Remove stopwords from the tokenised text
-wordlist = [word for word in text_tokens if not word in stopwords.words()]
+wordlist = [word for word in text_tokens if not word in stopwords]
 
 # Extract ngrams into a list of dictionaries (use 2 for bigrams)
 ngrams = []
