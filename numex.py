@@ -2,7 +2,7 @@ import pandas as pd
 import researchpy as rp
 import matplotlib.pyplot as plt
  
-df = pd.read_csv('https://www.digitalanalytics.id.au/static/files/youtube_vevo_clean', delimiter = ',') 
+df = pd.read_csv('https://www.digitalanalytics.id.au/static/files/youtube_vevo_clean.csv', delimiter = ',') 
  
 # Set max of rows to show, in/decrease to needs
 pd.set_option('max_rows', 9999) 
