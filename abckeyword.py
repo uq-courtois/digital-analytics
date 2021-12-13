@@ -33,7 +33,6 @@ ngrams = [dict(t) for t in {tuple(d.items()) for d in ngrams}]
 
 # Count and add frequencies to list of dicts
 for ngram in ngrams:
-	print(ngram['Ngram'])
 	ngram['Frequency'] = text.count(ngram['Ngram'])
 	
 # Generate dataframe with extracted ngrams, sorted for frequency
