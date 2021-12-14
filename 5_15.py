@@ -7,4 +7,4 @@ df = pd.read_csv('http://www.digitalanalytics.id.au/static/files/youtube_vevo_cl
 grouped = df.groupby(['artist'], as_index=False)[['like']].mean()
  
 # Print artist and views variables
-print(grouped[['artist','views']])
+print(grouped[['artist','like']])
