@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Reading files
-df1 = pd.read_csv('mtv-artists_genres.csv',sep=',') 
-df2 = pd.read_csv('mtv-artists_socialmedia.csv',sep=',')
+df1 = pd.read_csv('http://www.digitalanalytics.id.au/static/files/mtv-artists_genres.csv',sep=',') 
+df2 = pd.read_csv('http://www.digitalanalytics.id.au/static/files/mtv-artists_socialmedia.csv',sep=',')
 
 # Check whether there is a common variable (i.e., 'name')
 print(df1.info())
