@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Reading files
-df1 = pd.read_csv('mtv-artists_a.csv',sep=',') 
-df2 = pd.read_csv('mtv-artists_b.csv',sep=',')
+df1 = pd.read_csv('http://www.digitalanalytics.id.au/static/files/mtv-artists_a.csv',sep=',') 
+df2 = pd.read_csv('http://www.digitalanalytics.id.au/static/files/mtv-artists_b.csv',sep=',')
 
 # Check and compare variables: same quantity and names?
 print(df1.info())
