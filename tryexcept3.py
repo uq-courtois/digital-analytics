@@ -5,5 +5,5 @@ x = [
 ]
 
 for i in x:
-	i[size] = i[size] + 5
-	print(i[size])
+	i['size'] = i['size'] + 5
+	print(i['size'])
