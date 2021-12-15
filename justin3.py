@@ -22,13 +22,13 @@ divofinterest = soup.find('div',class_='YAJzu _26IxR _2QLX-')
 # Step 2: Loop though divofinterest and look for all divs with class name _2wWGp-
 for d in divofinterest.find_all('div',class_='_2wWGp'):
 	
-		# Step 3: Narrow down to the individual pieces of information in each div
-		title = d.find('a',class_='_3T9Id fmhNa nsZdE _2c2Zy _1tOey _3EOTW').getText()
-		url = d.find('a',class_='_3T9Id fmhNa nsZdE _2c2Zy _1tOey _3EOTW')['href']
-		description =d.find('div',class_='_1yL-m rMkro _1cBaI _3PhF6 _10YQT').getText()
+	# Step 3: Narrow down to the individual pieces of information in each div
+	title = d.find('a',class_='_3T9Id fmhNa nsZdE _2c2Zy _1tOey _3EOTW').getText()
+	url = d.find('a',class_='_3T9Id fmhNa nsZdE _2c2Zy _1tOey _3EOTW')['href']
+	description =d.find('div',class_='_1yL-m rMkro _1cBaI _3PhF6 _10YQT').getText()
 
-		print(title)
-		print(url)
-		print(description)
+	print(title)
+	print(url)
+	print(description)
 
-		print()
+	print()
