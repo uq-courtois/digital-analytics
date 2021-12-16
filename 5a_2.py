@@ -4,6 +4,10 @@ pd.set_option('max_rows', 9999) # Add this setting to make sure you get to see u
 # Read data
 df = pd.read_csv('https://digitalanalytics.id.au/static/files/artists-spotify.csv',sep=',')
 
+# Get an overall shape of the dataframe
+print(df.shape)
+print() # Print a blank line
+
 # Get overall description of the dataframe
 print(df.info())
 
