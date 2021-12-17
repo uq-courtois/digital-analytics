@@ -1,5 +1,4 @@
-# Import pandas
-import pandas as pd
+import pandas as pd # Module is needed, otherwise we get a NameError
 
 # Hard-coded data in list of dictionaries
 data = [
@@ -9,7 +8,6 @@ data = [
 	{'Name':'Eric','Course':'English','Grade':'B'},
 ]
 
-# Converting list of dictionaries into dataframe
+# Always make sure the variable within pd.DataFrame() has the same name as your list of dictionaries
 data = pd.DataFrame(data)
-# Writing dataframe into CSV file
 data.to_csv('grades.csv',sep=',',index=False) 
