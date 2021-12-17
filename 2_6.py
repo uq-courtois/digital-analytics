@@ -1,9 +1,9 @@
 import pandas as pd
- 
-data = pd.read_csv('http://digitalanalytics.id.au/static/files/2_5.csv',sep=',')
-data = data.T.to_dict().values() 
+data = pd.read_csv('https://www.digitalanalytics.id.au/static/files/2_6.csv',sep=',')
+data = data.T.to_dict().values()
 
 for i in data:
-	# Conditional to only process rows with a rank smaller than or equal to three
-	if i['Rank'] <= 3:
-		print(i)
+  i['surface'] = i['length'] * i['width']
+
+newdata = pd.DataFrame(data)
+newdata.to_csv('rectangles.csv',sep=',',index=False)
