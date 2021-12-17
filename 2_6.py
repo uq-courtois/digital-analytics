@@ -4,4 +4,4 @@ data = data.T.to_dict().values()
 
 for i in data:
   if i['Rank'] <= 3:
-    print(i)
+    print(i['URL'])
