@@ -1,5 +1,4 @@
-# Import pandas
-import pandas as pd
+import pandas as pd # Module is needed, otherwise we get a NameError
 
 # Hard-code data into list of dictionaries
 data = [
@@ -9,12 +8,10 @@ data = [
 	{'User':'Achmad','Followers':123,'Following':194},
 ]
 
-# Loop through data
 for d in data:
 	# Per iteration print number of followers
 	print(d['User'],'has',d['Followers'],'followers')
 
-# Converting list of dictionaries into dataframe
+# Always make sure the variable within pd.DataFrame() has the same name as your list of dictionaries
 data = pd.DataFrame(data)
-# Writing dataframe into CSV file
 data.to_csv('instagram.csv',sep=',',index=False) 
