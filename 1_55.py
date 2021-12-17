@@ -1,6 +1,7 @@
-a = ['Lisa', 'Eric', 'Mark']
-b = ['Wright', 'McDonald', 'Evans']
+x = [5,3,7,9,3]
+y = []
 
-for x in a:
-	for y in b:
-		print(x,y)
+for i in x:
+	y.append(i/2)
+
+print(y)
