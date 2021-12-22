@@ -1,7 +1,7 @@
 import pandas as pd
 
-df1 = pd.read_csv('imdb_data_1.csv',sep=';')
-df2 = pd.read_csv('imdb_data_2.csv',sep=';')
+df1 = pd.read_csv('imdb_data_1.csv',sep=',')
+df2 = pd.read_csv('imdb_data_2.csv',sep=',')
 
 print(df1.info()) # 4 variables, 19342 rows
 print(df2.info()) # 6 variables, 19335 rows
