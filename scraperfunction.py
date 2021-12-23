@@ -14,6 +14,7 @@ def scraper(url):
  
 	return BeautifulSoup(html, 'html.parser')
 
+# WARNING: CHANGE THE URL ON THE NEXT LINE INTO THE URL OF THE PAGE YOU AIM TO SCRAPE
 soup = scraper('https://digitalanalytics.id.au/static/materials/')
 
 print(soup) # Hash out or delete when you verified the HTML is successfully requested
