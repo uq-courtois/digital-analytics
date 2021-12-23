@@ -1,7 +1,8 @@
 import pandas as pd
 import researchpy as rp
 import matplotlib.pyplot as plt
- 
+pd.set_option('display.float_format', lambda x: '%.3f' % x)
+
 df = pd.read_csv('https://www.digitalanalytics.id.au/static/files/youtube_vevo_clean.csv', delimiter = ',') 
  
 # Set max of rows to show, in/decrease to needs
