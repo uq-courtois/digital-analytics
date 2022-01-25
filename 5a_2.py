@@ -1,5 +1,5 @@
 import pandas as pd
-pd.set_option('max_rows', 9999) # Add this setting to make sure you get to see up to 9999 lines in each output
+pd.set_option('display.max_rows', 9999) # Add this setting to make sure you get to see up to 9999 lines in each output
 
 # Read data
 df = pd.read_csv('https://digitalanalytics.id.au/static/files/artists-spotify.csv',sep=',')
