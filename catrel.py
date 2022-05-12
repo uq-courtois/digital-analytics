@@ -6,7 +6,7 @@ from scipy import stats
 df = pd.read_csv('http://www.digitalanalytics.id.au/static/files/youtube_vevo_clean.csv', delimiter = ',') 
 
 # Set max of rows to show, in/decrease to needs
-pd.set_option('max_rows', 9999) 
+pd.set_option('display.max_rows', 9999) 
  
 # CROSSTABULATION
 table, results = rp.crosstab(df['view_cat'],df['lyric_video'], prop= 'col', test= 'chi-square')
