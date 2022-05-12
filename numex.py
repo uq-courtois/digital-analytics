@@ -6,7 +6,7 @@ pd.set_option('display.float_format', lambda x: '%.3f' % x)
 df = pd.read_csv('https://www.digitalanalytics.id.au/static/files/youtube_vevo_clean.csv', delimiter = ',') 
  
 # Set max of rows to show, in/decrease to needs
-pd.set_option('max_rows', 9999) 
+pd.set_option('display.max_rows', 9999) 
  
 ### MEAN, STANDARD DEVIATION (std), MEDIAN (50%)
 print(df['views'].describe())
